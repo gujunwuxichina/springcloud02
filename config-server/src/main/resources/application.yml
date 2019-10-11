@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置git仓库地址
+          uri: https://github.com/gujunwuxichina/SpringCloudConfig01/
+          #配置仓库路径
+          search-paths: respo
+          #若git仓库为公开仓库则无需账号密码，私有需要
+          username: gujunchinawuxi@126.com
+          password: gj915041158
+      #配置仓库分支
+      label: master
+server:
+  port: 8888
